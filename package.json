@@ -1,0 +1,11 @@
+{
+  "name": "proproject2nd",
+  "version": "1.0.0",
+  "description": "A backend at advanced level following chai or backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mohd Afjal",
+  "license": "ISC"
+}

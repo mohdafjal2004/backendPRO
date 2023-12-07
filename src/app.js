@@ -8,6 +8,7 @@ const app = express();
 app.use(
   cors({
     origin: process.env.CORS_ORIGIN,
+    credentials: true,
   })
 );
 
@@ -25,5 +26,12 @@ app.use(express.static("public"));
 //For storing the secure-cookies in the browswer of user
 //only server can read these or remove these secure-cookies
 app.use(cookieParser());
+
+//* After configuring app methods, now write all the routes
+// routes import
+import userRouter from "./routes/user.routes.js";
+
+// routes declaration
+app.use("/api/v1/users", userRouter);
 
 export { app };
